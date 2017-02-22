@@ -1,10 +1,10 @@
 # dump Array
 ### php logger
 ```
-use Nagomien\Logger\Warn;
+use Nagomien\Logger\Logger;
 
-$warn = new Warn();
-$warn->dumper("strings",[2]);
+$logger = new Logger();
+$logger->dumper("strings",[2]);
 ```
 ```
 $ cat /tmp/dumper.log
@@ -16,10 +16,10 @@ $ cat /tmp/dumper.log
 ```
 #### dump your file
 ```
-use Nagomien\Logger\Warn;
+use Nagomien\Logger\Logger;
 
-$warn = new Warn("/path/to/file");
-$warn->dumper("strings",[2]);
+$logger = new Logger("/path/to/file");
+$logger->dumper("strings",[2]);
 ```
 ```
 $ cat /path/to/file
@@ -31,16 +31,16 @@ $ cat /path/to/file
 ```
 # dump object
 ```
-use Nagomien\Logger\Warn;
+use Nagomien\Logger\Logger;
 
-$warn = new Warn();
-$warn->dumper("strings",$warn);
+$logger = new Logger();
+$logger->dumper("strings",$logger);
 ```
 ```
 $ cat /tmp/dumper.log
-[2017-02-21 17:59:37] [1] [Nagomien\Logger\Warn Object
+[2017-02-21 17:59:37] [1] [Nagomien\Logger\Logger Object
 (
-    [fpath:Nagomien\Logger\Warn:private] => /tmp/dumper.log
+    [fpath:Nagomien\Logger\Logger:private] => /tmp/dumper.log
 )
 ]
 ```
