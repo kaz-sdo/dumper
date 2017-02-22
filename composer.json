@@ -1,0 +1,15 @@
+{
+    "name": "nagomien/dumper",
+    "description": "logging data to file",
+    "keywords": ["log","logging","dump","dumper"],
+    "license": "MIT",
+    "version": "1.0.3",
+    "autoload": {
+        "psr-0" : {
+            "Nagomien\\Logger" : "src"
+        }
+    },
+    "require": {
+        "nagomien/dumper": ">=1.0.2"
+    }
+}
