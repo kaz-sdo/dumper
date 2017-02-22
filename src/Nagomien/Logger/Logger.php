@@ -1,7 +1,7 @@
 <?php
 namespace Nagomien\Logger;
 
-class Warn
+class Logger
 {
     private $fpath;
     public function __construct($fpath='/tmp/dumper.log')
